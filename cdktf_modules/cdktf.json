@@ -1,0 +1,22 @@
+{
+  "language": "python",
+  "app": "pipenv run python main.py",
+  "projectId": "f02a016f-d673-4390-86db-65348eadfb3f",
+  "sendCrashReports": "false",
+  "terraformProviders": ["google@~> 4.0", "google-beta@~> 4.0"],
+  "terraformModules": [
+    {
+      "name": "gcp_pubsub",
+      "source": "git::https://github.com/lucasberlang/gcp-pubsub.git?ref=v1.2.0"
+    },
+    {
+      "name": "gcp_cloud_storage",
+      "source": "git::https://github.com/lucasberlang/gcp-cloud-storage.git?ref=v1.2.0"
+    }
+  ],
+  "codeMakerOutput": "imports",
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
