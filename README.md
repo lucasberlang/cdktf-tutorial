@@ -2,7 +2,7 @@
 
 In this article we are goint to talk about CDKTF and how to use all its benefits to deploy infrastructure in a programatic and reusable way on GCP. We will also see how to integrate CDKTF with your [terraform modules](https://developer.hashicorp.com/terraform/language/modules) to deploy  more reusable infrastructure under the supervision of your organization.
 
-CDKTF opens up a world of possibilities to take our organisation to the next level of automation, as well as making it easier for the people closest to the development side to deploy the infrastructure. In this article we will give some indications of when it is a good option to use cdktf and when to continue using terrraform through HCL, since not in all the cases of uses the CDKTF will bring us an added value.
+CDKTF opens up a world of possibilities to take our organisation to the next level of automation, as well as making it easier for the people closest to the development side to deploy the infrastructure. In this article we will give some indications of when it is a good option to use CDKTF and when to continue using terraform through HCL, since not in all the cases of uses the CDKTF will bring us an added value.
 
 Is CDKTF the miracle solution for deployments in our organisation? Let's have a look.
 
@@ -119,7 +119,7 @@ MyStack(app, "first_steps")
 app.synth()
 ```
 
-Now we are able to deployment our infrastructure, to do this we need to execute some commands with CDKTF. First of all, we need to donwload the providers and modules for an application and generate the CDK constructs for them. We use `cdktf get` to do this. It uses the cdktf.json configuration file to read the list of providers. This command only generates currently missing provider bindings, so it is very fast if nothing has changed.
+Now we are able to deployment our infrastructure, to do this we need to execute some commands with CDKTF. First of all, we need to download the providers and modules for an application and generate the CDK constructs for them. We use `cdktf get` to do this. It uses the cdktf.json configuration file to read the list of providers. This command only generates currently missing provider bindings, so it is very fast if nothing has changed.
 
 ```bash
 cdktf get
